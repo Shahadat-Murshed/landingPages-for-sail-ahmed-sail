@@ -90,7 +90,6 @@
     bottom: 32px;
     right: 32px;
     width: 566px;
-    height: 165px;
     padding: 32px;
     border-radius: 16px;
     background: #131318;
@@ -111,7 +110,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px; /* 162.5% */
+    line-height: 26px;
 }
 
 /* * Facility Seciton Css Start * */
@@ -239,7 +238,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 338px;
+    height: 400px;
 }
 
 .program-card-top::after {
@@ -280,7 +279,6 @@
 /* * Product Card Seciton Css Start * */
 
 .product-card {
-    height: 218px;
     background: #fff;
 }
 
@@ -338,7 +336,6 @@
 /* * Client Seciton Css Start * */
 
 .client-row {
-    height: 634px;
     border-radius: 16px;
     border: 1px solid rgba(19, 19, 24, 0.1);
 }
@@ -412,9 +409,6 @@
 }
 
 /* * Form Seciton Css Start * */
-.formBody {
-    height: 764px;
-}
 
 .formBody-left {
     margin-top: 10px;
@@ -502,7 +496,294 @@
     font-size: 24px;
 }
 
+/* *Footer Section Css Start * */
 footer {
     background: #131318;
-    height: 454px;
+
+    color: white !important;
+}
+
+.footer-left {
+    color: white !important;
+}
+
+.footer-left h1 {
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-left p {
+    width: 346px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.footer-right {
+    color: white !important;
+}
+
+.footer-right h4 {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-right-list li {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbarTitle {
+        color: #131318;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .navbarSpan {
+        color: #ff4240;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .navTicket {
+        padding: 8px 17px;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hero-section {
+        width: 335px;
+        height: 200px;
+        border-radius: 12px;
+        border-radius: 12px;
+    }
+
+    .hero-text-right {
+        display: none;
+    }
+    .hero-text-left {
+        position: absolute;
+        bottom: 12px;
+        left: 122px;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .hero-text-right-mobile {
+        display: flex;
+        width: 335px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border-radius: 12px;
+        background: #131318;
+    }
+
+    .hero-text-right-mobile h1 {
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .hero-text-right-mobile p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .facility-hr {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .program-card-top,
+    .program-card-bottom {
+        height: 244px;
+    }
+
+    .program-card-body {
+        margin-top: 0px !important;
+        padding: 24px !important;
+    }
+
+    .program-card h5 {
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .program-card p {
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .program-card a {
+        padding: 8px 17px;
+        border-radius: 8px;
+        border: 1px solid #ff4240;
+        background: #ff4240;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .programSection {
+        margin-bottom: 16px !important;
+    }
+
+    .facility-top-h2 {
+        color: #131318;
+        text-align: center;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .facility-top-p {
+        color: rgba(19, 19, 24, 0.6);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .product-card-img-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-card-img {
+        width: 287px;
+        height: auto;
+    }
+
+    .card-body-span {
+        margin-left: 24px;
+        margin-top: 20px;
+    }
+
+    .card-body-text {
+        margin-left: 24px;
+    }
+
+    .product-price-div {
+        flex-direction: column;
+        margin-left: 24px;
+    }
+    .accordion-bottom {
+        margin: 0px !important;
+    }
+
+    .card-header h5 {
+        border: none;
+        color: #131318;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .card-header p {
+        color: rgba(19, 19, 24, 0.6);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .formBodyInner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formLabel {
+        color: #131318;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .socialMedia {
+        width: 335px;
+    }
+
+    .footerContainer {
+        margin: 0px !important;
+    }
+
+    .footer-first {
+        margin-top: 40px;
+    }
+
+    .footer-last {
+        margin-top: 40px;
+    }
+
+    .footer-left {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-first {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 150px;
+    }
+
+    .footer-firstTwo {
+        text-align: left !important;
+    }
+
+    .footer-last {
+        align-items: end !important;
+        text-align: left !important;
+    }
 }
