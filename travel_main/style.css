@@ -1,1495 +1,161 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  overflow-x: hidden;
-  font-family: "Mulish", sans-serif;
+    overflow-x: hidden;
+    font-family: "Mulish", sans-serif;
 }
 
 button {
-  cursor: pointer;
-  border: none;
+    cursor: pointer;
+    border: none;
 }
 
 .container {
-  width: 1320px;
-  margin: auto;
+    width: 1320px;
+    margin: auto;
 }
 
 /* **** Nav Bar CSS **** */
 .nav-bar {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .nav-left {
-  display: flex;
-  justify-content: left;
-  width: 50%;
+    display: flex;
+    justify-content: left;
+    width: 50%;
 }
 
 .nav-left .nav-image {
-  width: 56px;
-  height: 48px;
+    width: 56px;
+    height: 48px;
 }
 
 .nav-breadcrumb {
-  display: none;
+    display: none;
 }
 
 .nav-bar .nav-heading {
-  color: #131318;
-  font-family: "Mulish", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  width: 201px;
-  height: 100%;
-  margin-left: 16px;
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 201px;
+    height: 100%;
+    margin-left: 16px;
 }
 
 .nav-bar .nav-span {
-  color: #ff5400;
+    color: #ff5400;
 }
 
 .nav-bar .nav-right {
-  width: 50%;
-  height: 100%;
-  color: #424247;
-  text-align: center;
+    width: 50%;
+    height: 100%;
+    color: #424247;
+    text-align: center;
 }
 
 .nav-right ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 44px;
-  padding: 11px 0px;
-  cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 44px;
+    padding: 11px 0px;
+    cursor: pointer;
 }
 .nav-right-h3 {
-  font-family: "Mulish", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .nav-right-h3:hover {
-  color: #ff5400;
-  font-weight: 700;
+    color: #ff5400;
+    font-weight: 700;
 }
 
 /* **** Hero Section CSS **** */
 .hero {
-  background: url("./img/hero.png");
-  height: 500px;
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url("./img/hero.png");
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 16px;
-  background: linear-gradient(180deg, rgba(19, 19, 24, 0.6) 0%, rgba(19, 19, 24, 0) 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.6) 0%, rgba(19, 19, 24, 0) 100%);
 }
 
 .hero-top {
-  z-index: 2;
+    z-index: 2;
 }
 
 .hero-top-h1 {
-  color: #fff;
-  font-family: "Mulish", sans-serif;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 .hero-middle {
-  margin-top: 24px;
-  z-index: 2;
-  width: 676px;
+    margin-top: 24px;
+    z-index: 2;
+    width: 676px;
 }
 .hero-middle-p {
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .hero-bottom {
-  margin-top: 60px;
-  width: 800px;
-  height: 84px;
-  display: flex;
-  justify-content: center;
-  padding: 16px 0px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
+    margin-top: 60px;
+    width: 800px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
 }
 
 .hero-bottom .hero-input {
-  width: 174px;
-  height: 52px;
-  color: rgba(19, 19, 24, 0.5);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-left: 15px;
-  border-radius: 8px;
-  background: #fff;
-  margin-right: 24px;
-  border: none;
-}
-
-.hero-input::placeholder {
-  color: rgba(19, 19, 24, 1);
-}
-
-.hero-bottom .hero-button {
-  width: 174px;
-  height: 52px;
-  border: none;
-  border-radius: 8px;
-  background: #ff5400;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.hero-button i {
-  margin-right: 10px;
-}
-
-/* **** Card Section CSS **** */
-
-.card {
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-left {
-  width: 50%;
-}
-
-.card-left-top-h1 {
-  color: #131318;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-.card-left-middle {
-  margin-top: 24px;
-}
-
-.card-left-middle-p {
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-.card-left-middle-ul {
-  margin-top: 24px;
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  width: 525px;
-  margin-left: 24px;
-}
-
-.card-left-middle-li {
-  margin-bottom: 16px;
-}
-
-.card-left-bottom-p {
-  color: #5a5a5d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.card-left-bottom-button {
-  margin-top: 32px;
-  width: 174px;
-  height: 52px;
-  border-radius: 8px;
-  background: #ff5400;
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.card-right {
-  width: 40%;
-}
-
-.card-right-image {
-  width: 100%;
-  height: auto;
-}
-
-/* **** Gallery Section CSS **** */
-
-.gallery {
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gallery-h1 {
-  color: #131318;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.gallery-p {
-  margin-top: 24px;
-  width: 643px;
-  color: rgba(19, 19, 24, 0.7);
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px; /* 162.5% */
-}
-
-.gallery-images {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery-image {
-  position: relative;
-  z-index: 2;
-}
-
-.gallery-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 16px;
-  border-radius: 16px;
-  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, rgba(19, 19, 24, 0.2) 100%);
-  z-index: -1;
-}
-.gallery-text {
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-image-h1 {
-  color: #fff;
-  text-align: center;
-  font-family: Mulish;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-.gallery-top {
-  margin-top: 24px;
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-}
-
-.gallery-top-left {
-  width: 50%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/maldive.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-top-right {
-  width: 50%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/indo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-middle {
-  margin-top: 24px;
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-}
-
-.gallery-middle-left {
-  width: 30%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/srilanka.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-middle-middle {
-  width: 50%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/na.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-middle-right {
-  width: 20%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/kashmir.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-bottom {
-  margin-top: 24px;
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-}
-
-.gallery-bottom-left {
-  width: 40%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/bangladesh.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-bottom-right {
-  width: 60%;
-  height: 300px;
-  border-radius: 16px;
-  background: url("./img/bandarban.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.gallery-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* **** Features Section CSS **** */
-
-.features {
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.features-h1 {
-  color: #131318;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.features-p {
-  margin-top: 24px;
-  width: 643px;
-  color: rgba(19, 19, 24, 0.7);
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.feature-cards {
-  margin-top: 48px;
-}
-
-.feature-cards-top {
-  width: 100%;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-
-.feature-cards-top-left {
-  width: 50%;
-  height: 284px;
-  border-radius: 16px;
-  border: 1px solid rgba(251, 181, 99, 0.2);
-  background: rgba(251, 181, 99, 0.05);
-}
-
-.feature-cards-top-right {
-  width: 50%;
-  height: 284px;
-  border-radius: 16px;
-  border: 1px solid rgba(41, 206, 246, 0.2);
-  background: rgba(41, 206, 246, 0.05);
-}
-
-.feature-cards-bottom {
-  width: 50%;
-  height: 284px;
-  margin: auto;
-  margin-top: 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(233, 68, 68, 0.2);
-  background: rgba(233, 68, 68, 0.05);
-}
-
-.card-icon {
-  padding: 32px 0px 0px 32px;
-}
-.card-title {
-  margin-top: 32px;
-  padding-left: 32px;
-  color: #131318;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-.card-description {
-  margin-top: 16px;
-  color: #5a5a5d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  padding-left: 32px;
-  padding-right: 55px;
-  text-align: justify;
-}
-
-/* **** Deals Section CSS **** */
-
-.deals {
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.deals-h1 {
-  color: #131318;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin-bottom: 24px;
-}
-
-.deals-p {
-  width: 643px;
-  color: rgba(19, 19, 24, 0.7);
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  margin-bottom: 48px;
-}
-
-.deals-cards {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.deals-top {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  border-radius: 16px;
-  background: url("./img/card-top.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.deals-card {
-  width: 50%;
-  height: 389px;
-  border-radius: 16px;
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(2.5px);
-}
-
-.deals-middle {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  border-radius: 16px;
-  background: url("./img/card-middle.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.deals-top-card {
-  position: absolute;
-  top: 56px;
-  right: 56px;
-}
-
-.deals-middle-card {
-  position: absolute;
-  top: 56px;
-  left: 56px;
-}
-
-.deals-middle-card {
-  position: absolute;
-  top: 56px;
-  right: 56px;
-}
-.deals-cards-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  padding-top: 52px;
-  padding-left: 50px;
-  gap: 24px;
-  color: #5a5a5d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.deals-cards-top i {
-  color: #ff5400;
-  margin-right: 8px;
-}
-.deals-cards-title {
-  margin-top: 26px;
-  padding-left: 50px;
-  color: #131318;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.deals-cards-description {
-  margin-top: 26px;
-  padding-left: 50px;
-  color: #5a5a5d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.deals-cards-price {
-  margin-top: 26px;
-  padding-left: 50px;
-  color: #ff5400;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.deals-cards-button {
-  margin-top: 26px;
-  margin-left: 50px;
-  width: 150px;
-  height: 52px;
-  border-radius: 8px;
-  background: #ff5400;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.deals-button {
-  margin-top: 62px;
-  padding-left: 22px;
-  padding-right: 22px;
-  height: 52px;
-  border-radius: 8px;
-  background: #ff5400;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-/* **** Guide Section CSS **** */
-.guide {
-  margin-top: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  align-items: center;
-}
-
-.guide-left {
-  width: 50%;
-}
-.guide-right {
-  width: 50%;
-  background: url("./img/neutro-min.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-}
-
-.guide-top {
-  color: #131318;
-  text-align: left;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.guide-middle {
-  margin-top: 20px;
-  width: 643px;
-  color: rgba(19, 19, 24, 0.7);
-  text-align: left;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.guide-bottom {
-  margin-top: 20px;
-  width: 800px;
-  height: 84px;
-  padding: 16px 0px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-
-.guide-input {
-  width: 174px;
-  height: 52px;
-  color: rgba(19, 19, 24, 0.5);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-left: 15px;
-  border-radius: 8px;
-  background: #fff;
-  margin-right: 24px;
-  border: none;
-}
-
-/* **** Video Card Section CSS **** */
-.video-card {
-  height: 424px;
-}
-.video-card-left {
-  width: 40%;
-}
-
-.video-card-right {
-  width: 50%;
-  margin-left: 48px;
-}
-
-.video-card-li {
-  width: 518px;
-  color: #131318;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-.video-card-video {
-  background: url("./img/video.png");
-  width: 100%;
-  height: 120%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  padding-top: 180px;
-}
-
-/* **** Newsletter Section CSS **** */
-
-.news {
-  margin-top: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  align-items: center;
-}
-
-.news-left {
-  width: 40%;
-  border-radius: 16px;
-  border: 1px solid #ff5400;
-  padding-left: 40px;
-}
-.news-title {
-  color: #131318;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  padding-top: 40px;
-}
-
-.news-description {
-  width: 350px;
-  color: #5a5a5d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  margin-top: 16px;
-}
-
-.news-hr {
-  margin-top: 24px;
-  width: 90%;
-  height: 1px;
-  border: 1px dotted rgba(19, 19, 24, 0.1);
-}
-
-.news-input {
-  margin-top: 24px;
-  border: none;
-  width: 90%;
-  height: 52px;
-  border-radius: 8px;
-  background: rgba(19, 19, 24, 0.05);
-  padding-left: 20px;
-  color: rgba(19, 19, 24, 0.3);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.news-button {
-  margin-top: 24px;
-  margin-bottom: 40px;
-  width: 90%;
-  height: 52px;
-  border-radius: 8px;
-  background: #ff5400;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.news-right {
-  width: 60%;
-}
-
-.news-right-image {
-  background: url("./img/news.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 434px;
-  position: relative;
-}
-
-.news-image-text {
-  position: absolute;
-  bottom: 50px;
-  right: 10px;
-  width: 324px;
-  height: 120px;
-  transform: rotate(-19.628deg);
-  border-radius: 16px;
-  background: #ff5400;
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-top: 20px;
-}
-
-.news-image-text-span {
-  color: #fff;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-/* **** Footer Section CSS **** */
-
-footer {
-  margin-top: 100px;
-  background: rgba(19, 19, 24, 0.05);
-}
-
-.footer {
-  padding-top: 110px;
-  padding-bottom: 110px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-top {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-image {
-  width: 56px;
-  height: 48px;
-  margin-right: 16px;
-}
-
-.footer-heading {
-  color: #131318;
-  font-family: Mulish;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.footer-span {
-  color: #ff5400;
-}
-
-.footer-middle {
-  margin-top: 15px;
-  color: #5a5a5d;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-.footer-social {
-  margin-top: 50px;
-}
-
-.footer-social i {
-  font-size: 24px;
-  margin-right: 20px;
-}
-
-.footer-hr {
-  width: 872px;
-  height: 1px;
-  border: 1px solid rgba(19, 19, 24, 0.1);
-  margin: 50px 0;
-}
-
-.footer-bottom {
-  color: #131318;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-@media screen and (min-width: 992px) {
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    width: 335px;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .nav-right {
-    display: none;
-  }
-
-  .nav-left {
-    display: flex;
-    justify-content: left;
-    width: 80%;
-  }
-
-  .nav-breadcrumb {
-    display: flex;
-    width: 20%;
-    width: 24px;
-    height: 24px;
-  }
-
-  .nav-bar .nav-heading {
-    color: #131318;
-    font-family: Mulish;
-    font-size: 21.543px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
-  .nav-bar .nav-image {
-    width: 33.516px;
-    height: 28.724px;
-  }
-
-  .hero-top-h1 {
-    margin-top: 32px;
-    color: #fff;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-  .hero-middle-p {
-    width: 304px;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    margin: auto;
-  }
-
-  .hero-bottom {
-    margin-top: 32px;
-    width: 287px;
-    height: 288px;
-    padding-left: 26px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  .hero-bottom .hero-input {
-    width: 255px;
-    margin-bottom: 16px;
-    height: 52px;
-    border-radius: 8px;
-    background: #fff;
-  }
-
-  .hero-bottom .hero-button {
-    width: 255px;
-    height: 52px;
-    border-radius: 8px;
-    background: #ff5400;
-  }
-  /* **** Card Section CSS **** */
-  .card {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .card-left {
-    width: 100%;
-  }
-
-  .card-left-top-h1 {
-    color: #131318;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
-  .card-left-middle {
-    margin-top: 16px;
-  }
-
-  .card-left-middle-p {
-    text-align: justify;
-    color: rgba(19, 19, 24, 0.7);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  .card-left-middle-ul {
-    width: 90%;
-    text-align: justify;
-    color: rgba(19, 19, 24, 0.7);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  .card-left-bottom-p {
-    text-align: justify;
-    color: #5a5a5d;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  .card-left-bottom-button {
-    margin: 24px 0px;
-    width: 174px;
-    height: 52px;
-    border-radius: 8px;
-    background: #ff5400;
-  }
-
-  .card-right {
-    width: 100%;
-  }
-  .card-right-image {
-    height: 1;
-    width: 1;
-  }
-
-  /* **** Gallery Section CSS **** */
-
-  .gallery {
-    margin-top: 24px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery-h1 {
-    color: #131318;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
-  .gallery-p {
-    margin-top: 16px;
-    width: 309px;
-    color: rgba(19, 19, 24, 0.7);
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-  }
-
-  .gallery-images {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .gallery-top {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: space-between;
-  }
-
-  .gallery-top-left,
-  .gallery-top-right,
-  .gallery-middle-left,
-  .gallery-middle-middle,
-  .gallery-middle-right,
-  .gallery-bottom-left,
-  .gallery-bottom-right {
-    width: 100%;
-    height: 176px;
-  }
-
-  .gallery-middle {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: space-between;
-  }
-
-  .gallery-bottom {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: space-between;
-  }
-
-  /* **** Features Section CSS **** */
-  .features {
-    margin-top: 24px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .features-h1 {
-    color: #131318;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
-  .features-p {
-    margin-top: 16px;
-    width: 309px;
-    color: rgba(19, 19, 24, 0.7);
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-  }
-
-  .feature-cards-top {
-    width: 100%;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-  }
-
-  .feature-cards {
-    margin-top: 16px;
-  }
-
-  .feature-cards-top {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .feature-cards-top-left,
-  .feature-cards-top-right,
-  .feature-cards-bottom {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .card-title {
-    margin-top: 16px;
-    color: #131318;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
-  .card-description {
-    margin-top: 16px;
-    color: #5a5a5d;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    padding-left: 32px;
-    padding-right: 32px;
-    text-align: justify;
-  }
-
-  /* **** Deals Section CSS **** */
-
-  .deals {
-    margin-top: 24px;
-  }
-
-  .deals-h1 {
-    color: #131318;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-bottom: 16px;
-  }
-
-  .deals-p {
-    width: 309px;
-    color: rgba(19, 19, 24, 0.7);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 16px;
-  }
-
-  .deals-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .deals-top-card,
-  .deals-middle-card,
-  .deals-middle-card {
-    position: absolute;
-    top: 180px;
-    left: 16px;
-    width: 90%;
-    height: 500px;
-  }
-
-  .deals-card {
-    width: 303px;
-    height: 297px;
-    border-radius: 16px;
-    border: 2px solid #fff;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(2.5px);
-  }
-
-  .deals-cards-top {
-    padding-top: 16px;
-    padding-left: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    color: #5a5a5d;
-    font-size: 16px;
-    gap: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .deals-cards-title {
-    padding-left: 25px;
-    margin-top: 18px;
-    color: #131318;
-    font-family: Mulish;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
-  .deals-cards-description {
-    width: 254px;
-    height: 48px;
-    overflow: hidden;
-    margin-top: 2px;
-    padding-left: 25px;
-    color: #5a5a5d;
-    font-family: Mulish;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  .deals-cards-price {
-    margin-top: 8px;
-    padding-left: 25px;
-    color: #ff5400;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-  .deals-cards-button {
-    margin-top: 16px;
-    margin-left: 25px;
-    width: 130px;
-    height: 40px;
-    border-radius: 8px;
-    background: #ff5400;
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .deals-button {
-    display: none;
-  }
-
-  /* **** Video Card Section CSS **** */
-
-  .video-card {
-    width: 100%;
-    height: 100%;
-  }
-  .video-card-left,
-  .video-card-right {
-    width: 100%;
-  }
-
-  .video-card-li {
-    width: 90%;
-    color: #131318;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px;
-  }
-  .video-h1 {
-    width: 248px;
-    color: #131318;
-    font-size: 20px;
-    text-align: left;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 30px;
-  }
-
-  .video-middle {
-    margin-top: 16px;
-  }
-
-  .video-card-video {
-    margin-left: -30px;
-    width: 90%;
-    height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    padding-top: 40px;
-  }
-
-  /* **** Guide Section CSS **** */
-  .guide {
-    margin-top: 24px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .guide-left,
-  .guide-right {
-    width: 100%;
-  }
-
-  .guide-right {
-    background-size: contain;
-    height: 250px;
-  }
-
-  .guide-top {
-    color: #131318;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-bottom: 16px;
-  }
-  .guide-middle {
-    margin-top: 16px;
-    width: 309px;
-    color: rgba(19, 19, 24, 0.7);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 16px;
-  }
-
-  .guide-bottom {
-    margin-top: 16px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .guide-input {
     width: 174px;
     height: 52px;
     color: rgba(19, 19, 24, 0.5);
@@ -1500,24 +166,1358 @@ footer {
     padding-left: 15px;
     border-radius: 8px;
     background: #fff;
-    margin-left: 24px;
+    margin-right: 24px;
     border: none;
-  }
+}
 
-  /* **** Newsletter Section CSS **** */
+.hero-input::placeholder {
+    color: rgba(19, 19, 24, 1);
+}
 
-  .news {
+.hero-bottom .hero-button {
+    width: 174px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background: #ff5400;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-button i {
+    margin-right: 10px;
+}
+
+/* **** Card Section CSS **** */
+
+.card {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-left {
+    width: 50%;
+}
+
+.card-left-top-h1 {
+    color: #131318;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.card-left-middle {
     margin-top: 24px;
+}
+
+.card-left-middle-p {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.card-left-middle-ul {
+    margin-top: 24px;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 525px;
+    margin-left: 24px;
+}
+
+.card-left-middle-li {
+    margin-bottom: 16px;
+}
+
+.card-left-bottom-p {
+    color: #5a5a5d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card-left-bottom-button {
+    margin-top: 32px;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #ff5400;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-right {
+    width: 40%;
+}
+
+.card-right-image {
+    width: 100%;
+    height: auto;
+}
+
+/* **** Gallery Section CSS **** */
+
+.gallery {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.gallery-h1 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.gallery-p {
+    margin-top: 24px;
+    width: 643px;
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.gallery-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-image {
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, rgba(19, 19, 24, 0.2) 100%);
+    z-index: -1;
+}
+.gallery-text {
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image-h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.gallery-top {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.gallery-top-left {
+    width: 50%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/maldive.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-top-right {
+    width: 50%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/indo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-middle {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.gallery-middle-left {
+    width: 30%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/srilanka.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-middle-middle {
+    width: 50%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/na.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-middle-right {
+    width: 20%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/kashmir.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-bottom {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.gallery-bottom-left {
+    width: 40%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/bangladesh.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-bottom-right {
+    width: 60%;
+    height: 300px;
+    border-radius: 16px;
+    background: url("./img/bandarban.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* **** Features Section CSS **** */
+
+.features {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-h1 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.features-p {
+    margin-top: 24px;
+    width: 643px;
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.feature-cards {
+    margin-top: 48px;
+}
+
+.feature-cards-top {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.feature-cards-top-left {
+    width: 50%;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.feature-cards-top-right {
+    width: 50%;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.feature-cards-bottom {
+    width: 50%;
+    height: 284px;
+    margin: auto;
+    margin-top: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.card-icon {
+    padding: 32px 0px 0px 32px;
+}
+.card-title {
+    margin-top: 32px;
+    padding-left: 32px;
+    color: #131318;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.card-description {
+    margin-top: 16px;
+    color: #5a5a5d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 32px;
+    padding-right: 55px;
+    text-align: justify;
+}
+
+/* **** Deals Section CSS **** */
+
+.deals {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deals-h1 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.deals-p {
+    width: 643px;
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 48px;
+}
+
+.deals-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.deals-top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    border-radius: 16px;
+    background: url("./img/card-top.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.deals-card {
+    width: 50%;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+}
+
+.deals-middle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    border-radius: 16px;
+    background: url("./img/card-middle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.deals-top-card {
+    position: absolute;
+    top: 56px;
+    right: 56px;
+}
+
+.deals-middle-card {
+    position: absolute;
+    top: 56px;
+    left: 56px;
+}
+
+.deals-middle-card {
+    position: absolute;
+    top: 56px;
+    right: 56px;
+}
+.deals-cards-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-top: 52px;
+    padding-left: 50px;
+    gap: 24px;
+    color: #5a5a5d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.deals-cards-top i {
+    color: #ff5400;
+    margin-right: 8px;
+}
+.deals-cards-title {
+    margin-top: 26px;
+    padding-left: 50px;
+    color: #131318;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.deals-cards-description {
+    margin-top: 26px;
+    padding-left: 50px;
+    color: #5a5a5d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.deals-cards-price {
+    margin-top: 26px;
+    padding-left: 50px;
+    color: #ff5400;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.deals-cards-button {
+    margin-top: 26px;
+    margin-left: 50px;
+    width: 150px;
+    height: 52px;
+    border-radius: 8px;
+    background: #ff5400;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.deals-button {
+    margin-top: 62px;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 52px;
+    border-radius: 8px;
+    background: #ff5400;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* **** Guide Section CSS **** */
+.guide {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     gap: 24px;
     align-items: center;
-  }
+}
 
-  .news-left,
-  .news-right {
+.guide-left {
+    width: 50%;
+}
+.guide-right {
+    width: 50%;
+    background: url("./img/neutro-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.guide-top {
+    color: #131318;
+    text-align: left;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.guide-middle {
+    margin-top: 20px;
+    width: 643px;
+    color: rgba(19, 19, 24, 0.7);
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.guide-bottom {
+    margin-top: 20px;
+    width: 800px;
+    height: 84px;
+    padding: 16px 0px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+.guide-input {
+    width: 174px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 15px;
+    border-radius: 8px;
+    background: #fff;
+    margin-right: 24px;
+    border: none;
+}
+
+/* **** Video Card Section CSS **** */
+.video-card {
+    height: 424px;
+}
+.video-card-left {
+    width: 40%;
+}
+
+.video-card-right {
+    width: 50%;
+    margin-left: 48px;
+}
+
+.video-card-li {
+    width: 518px;
+    color: #131318;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.video-card-video {
+    background: url("./img/video.png");
     width: 100%;
-  }
+    height: 120%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    padding-top: 180px;
+}
+
+/* **** Newsletter Section CSS **** */
+
+.news {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+
+.news-left {
+    width: 40%;
+    border-radius: 16px;
+    border: 1px solid #ff5400;
+    padding-left: 40px;
+}
+.news-title {
+    color: #131318;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 40px;
+}
+
+.news-description {
+    width: 350px;
+    color: #5a5a5d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.news-hr {
+    margin-top: 24px;
+    width: 90%;
+    height: 1px;
+    border: 1px dotted rgba(19, 19, 24, 0.1);
+}
+
+.news-input {
+    margin-top: 24px;
+    border: none;
+    width: 90%;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding-left: 20px;
+    color: rgba(19, 19, 24, 0.3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.news-button {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    width: 90%;
+    height: 52px;
+    border-radius: 8px;
+    background: #ff5400;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.news-right {
+    width: 60%;
+}
+
+.news-right-image {
+    background: url("./img/news.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 434px;
+    position: relative;
+}
+
+.news-image-text {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #ff5400;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
+}
+
+.news-image-text-span {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* **** Footer Section CSS **** */
+
+footer {
+    margin-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-image {
+    width: 56px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.footer-heading {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-span {
+    color: #ff5400;
+}
+
+.footer-middle {
+    margin-top: 15px;
+    color: #5a5a5d;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.footer-social {
+    margin-top: 50px;
+}
+
+.footer-social i {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.footer-hr {
+    width: 872px;
+    height: 1px;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+    margin: 50px 0;
+}
+
+.footer-bottom {
+    color: #131318;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 335px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        display: flex;
+        justify-content: left;
+        width: 80%;
+    }
+
+    .nav-breadcrumb {
+        display: flex;
+        width: 20%;
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-bar .nav-heading {
+        color: #131318;
+        font-family: Mulish;
+        font-size: 21.543px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .nav-bar .nav-image {
+        width: 33.516px;
+        height: 28.724px;
+    }
+
+    .hero-top-h1 {
+        margin-top: 32px;
+        color: #fff;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .hero-middle-p {
+        width: 304px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        margin: auto;
+    }
+
+    .hero-bottom {
+        margin-top: 32px;
+        width: 287px;
+        height: 288px;
+        padding-left: 26px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .hero-bottom .hero-input {
+        width: 255px;
+        margin-bottom: 16px;
+        height: 52px;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .hero-bottom .hero-button {
+        width: 255px;
+        height: 52px;
+        border-radius: 8px;
+        background: #ff5400;
+    }
+    /* **** Card Section CSS **** */
+    .card {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-left {
+        width: 100%;
+    }
+
+    .card-left-top-h1 {
+        color: #131318;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .card-left-middle {
+        margin-top: 16px;
+    }
+
+    .card-left-middle-p {
+        text-align: justify;
+        color: rgba(19, 19, 24, 0.7);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .card-left-middle-ul {
+        width: 90%;
+        text-align: justify;
+        color: rgba(19, 19, 24, 0.7);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .card-left-bottom-p {
+        text-align: justify;
+        color: #5a5a5d;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .card-left-bottom-button {
+        margin: 24px 0px;
+        width: 174px;
+        height: 52px;
+        border-radius: 8px;
+        background: #ff5400;
+    }
+
+    .card-right {
+        width: 100%;
+    }
+    .card-right-image {
+        height: 1;
+        width: 1;
+    }
+
+    /* **** Gallery Section CSS **** */
+
+    .gallery {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-h1 {
+        color: #131318;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .gallery-p {
+        margin-top: 16px;
+        width: 309px;
+        color: rgba(19, 19, 24, 0.7);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+    }
+
+    .gallery-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-top {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .gallery-top-left,
+    .gallery-top-right,
+    .gallery-middle-left,
+    .gallery-middle-middle,
+    .gallery-middle-right,
+    .gallery-bottom-left,
+    .gallery-bottom-right {
+        width: 100%;
+        height: 176px;
+    }
+
+    .gallery-middle {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .gallery-bottom {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    /* **** Features Section CSS **** */
+    .features {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-h1 {
+        color: #131318;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .features-p {
+        margin-top: 16px;
+        width: 309px;
+        color: rgba(19, 19, 24, 0.7);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+    }
+
+    .feature-cards-top {
+        width: 100%;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .feature-cards {
+        margin-top: 16px;
+    }
+
+    .feature-cards-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .feature-cards-top-left,
+    .feature-cards-top-right,
+    .feature-cards-bottom {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card-title {
+        margin-top: 16px;
+        color: #131318;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .card-description {
+        margin-top: 16px;
+        color: #5a5a5d;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+        text-align: justify;
+    }
+
+    /* **** Deals Section CSS **** */
+
+    .deals {
+        margin-top: 24px;
+    }
+
+    .deals-h1 {
+        color: #131318;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    .deals-p {
+        width: 309px;
+        color: rgba(19, 19, 24, 0.7);
+        text-align: center;
+        font-family: Mulish;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .deals-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .deals-top-card,
+    .deals-middle-card,
+    .deals-middle-card {
+        position: absolute;
+        top: 180px;
+        left: 16px;
+        width: 90%;
+        height: 500px;
+    }
+
+    .deals-card {
+        width: 303px;
+        height: 297px;
+        border-radius: 16px;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2.5px);
+    }
+
+    .deals-cards-top {
+        padding-top: 16px;
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        color: #5a5a5d;
+        font-size: 16px;
+        gap: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .deals-cards-title {
+        padding-left: 25px;
+        margin-top: 18px;
+        color: #131318;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .deals-cards-description {
+        width: 254px;
+        height: 48px;
+        overflow: hidden;
+        margin-top: 2px;
+        padding-left: 25px;
+        color: #5a5a5d;
+        font-family: Mulish;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .deals-cards-price {
+        margin-top: 8px;
+        padding-left: 25px;
+        color: #ff5400;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .deals-cards-button {
+        margin-top: 16px;
+        margin-left: 25px;
+        width: 130px;
+        height: 40px;
+        border-radius: 8px;
+        background: #ff5400;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .deals-button {
+        display: none;
+    }
+
+    /* **** Video Card Section CSS **** */
+
+    .video-card {
+        width: 100%;
+        height: 100%;
+    }
+    .video-card-left,
+    .video-card-right {
+        width: 100%;
+    }
+
+    .video-card-li {
+        width: 90%;
+        color: #131318;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    .video-h1 {
+        width: 248px;
+        color: #131318;
+        font-size: 20px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 30px;
+    }
+
+    .video-middle {
+        margin-top: 16px;
+    }
+
+    .video-card-video {
+        margin-left: -30px;
+        width: 90%;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        padding-top: 40px;
+    }
+
+    /* **** Guide Section CSS **** */
+    .guide {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .guide-left,
+    .guide-right {
+        width: 100%;
+    }
+
+    .guide-right {
+        background-size: contain;
+        height: 250px;
+    }
+
+    .guide-top {
+        color: #131318;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+    .guide-middle {
+        margin-top: 16px;
+        width: 309px;
+        color: rgba(19, 19, 24, 0.7);
+        text-align: center;
+        font-family: Mulish;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .guide-bottom {
+        margin-top: 16px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .guide-input {
+        width: 174px;
+        height: 52px;
+        color: rgba(19, 19, 24, 0.5);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 15px;
+        border-radius: 8px;
+        background: #fff;
+        margin-left: 24px;
+        border: none;
+    }
+
+    /* **** Newsletter Section CSS **** */
+
+    .news {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .news-left,
+    .news-right {
+        width: 100%;
+    }
 }

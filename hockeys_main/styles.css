@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    color: #131318;
+    overflow-x: hidden;
+}
+
+/* * Navbar Css Start * */
+
+.navbarTitle {
+    color: #131318;
+    font-family: "Manrope", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.navbarSpan {
+    color: #ff4240;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.navLink {
+    color: #424247 !important;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 44px;
+}
+
+.navLink:hover {
+    color: #ff4240 !important;
+}
+
+.navTicket {
+    padding: 15px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #ff4240;
+    color: #fff !important;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* * Hero Section Css Start * */
+
+.hero-section {
+    position: relative;
+    height: 550px;
+    background: url("./img/1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.hero-text-left {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero-text-left-svg {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-right {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 566px;
+    height: 165px;
+    padding: 32px;
+    border-radius: 16px;
+    background: #131318;
+}
+
+.hero-text-right h1 {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero-text-right p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+}
+
+/* * Facility Seciton Css Start * */
+
+.facility-hr {
+    border-top: 1px dashed rgba(19, 19, 24, 0.2);
+    margin: 32px 0;
+}
+.facility-top-h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.facility-top-p {
+    color: rgba(19, 19, 24, 0.6);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 10px;
+    border: none;
+}
+
+.circle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -45%);
+}
+
+.circle-center-h2 {
+    color: #131318 !important;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.facility-caption-h4 {
+    color: #131318 !important;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.facility-caption-p {
+    color: rgba(19, 19, 24, 0.6);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* * Program Card Seciton Css Start * */
+
+.program-card {
+    border-radius: 16px;
+    background: rgba(19, 19, 24, 0.5);
+}
+
+.program-card-body {
+    margin-top: 90px;
+    z-index: 2;
+}
+
+.program-card h5 {
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.program-card p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.program-card a {
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 1px solid #ff4240;
+    background: #ff4240;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.program-card-top-left {
+    background: url(./img/2.png);
+}
+.program-card-top-right {
+    background: url(./img/3.png);
+}
+.program-card-top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 338px;
+}
+
+.program-card-top::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.5);
+    border-radius: 16px;
+}
+
+.program-card-bottom {
+    background: url(./img/4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+}
+
+.program-card-bottom::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.5);
+    border-radius: 16px;
+}
+
+.program-card-bottom .program-card-body {
+    margin-top: 140px;
+}
+
+/* * Product Card Seciton Css Start * */
+
+.product-card {
+    height: 218px;
+    background: #fff;
+}
+
+.product-card-img {
+    width: 180px;
+    height: 172px;
+}
+
+.card-body-right {
+    gap: 16px;
+}
+.card-text2 {
+    gap: 5px;
+}
+.product-text {
+    padding-top: 2px;
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.product-card-title {
+    color: #131318;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.product-card-text {
+    color: rgba(19, 19, 24, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.product-price {
+    color: #ff4240;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 26px;
+}
+
+.product-delivery-fee {
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* * Client Seciton Css Start * */
+
+.client-row {
+    height: 634px;
+    border-radius: 16px;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+}
+
+.accordion-button {
+    background-color: white !important;
+    padding-left: 0;
+}
+.accordion-button-collapsed {
+    background-color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-image: url("./img/Frame.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("./img/Frame.png");
+    transform: rotate(-180deg);
+}
+
+.accordion-button-one:not(.collapsed)::after {
+    background-image: url("./img/Frame1.png");
+    transform: rotate(-180deg);
+}
+
+.accordion-button:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+#accordion {
+    margin-top: 10px;
+}
+
+.client-card {
+    border: none;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+}
+.client-image {
+    padding-top: 40px;
+}
+
+.client-title {
+    color: #131318;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+.card-header {
+    border: none;
+}
+
+.client-p {
+    width: 518px;
+    color: rgba(19, 19, 24, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* * Form Seciton Css Start * */
+.formBody {
+    height: 764px;
+}
+
+.formBody-left {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+}
+
+.formBody-right {
+    padding: 30px;
+}
+
+.formCard {
+    height: 216px;
+    border-radius: 16px;
+}
+
+.formCardOne {
+    background: rgba(188, 237, 109, 0.1);
+}
+
+.formCardTwo {
+    background: rgba(253, 221, 95, 0.1);
+}
+
+.formCardThree {
+    background: rgba(98, 156, 243, 0.1);
+}
+
+.formLabel {
+    color: #131318;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.formInput {
+    border-radius: 12px;
+    background: rgba(19, 19, 24, 0.03);
+    padding: 20px;
+}
+
+.formButton {
+    padding: 15px 24px;
+    border-radius: 12px;
+    border: 1px solid #ff4240;
+    background: #ff4240;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.formCard-subtitle {
+    color: rgba(19, 19, 24, 0.4);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.formCard-title {
+    color: #131318;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+}
+
+/* * Social Media Css Start * */
+
+.socialMedia {
+    border-radius: 12px;
+    background: rgba(19, 19, 24, 0.03);
+    padding: 35px 0px;
+}
+.socialMediah2 {
+    color: #131318;
+    font-size: 24px;
+}
+
+footer {
+    background: #131318;
+    height: 454px;
+}
