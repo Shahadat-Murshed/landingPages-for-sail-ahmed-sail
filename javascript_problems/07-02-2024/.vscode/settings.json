@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    },
+    "eslint.workingDirectories": [
+        "./client",
+        "./server"
+    ],
+    "files.exclude": {
+        "**/.git": false
+    },
+}
