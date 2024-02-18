@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ***Nav Section CSS*** */
+.navbar-header {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    line-height: normal;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #030712;
+}
+.nav-link {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-button {
+    color: #1dd100;
+    border: 1px solid rgba(29, 209, 0, 0.4);
+    border-radius: 12px;
+    background: rgba(29, 209, 0, 0.1);
+}
+.nav-button-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ***Info Section CSS*** */
+.info {
+    height: 550px;
+}
+.info-section {
+    background: url("../images/info_bg.png");
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+}
+
+.info-button {
+    color: #030712;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 12px;
+    background: rgb(29, 209, 0);
+}
+
+.info-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+}
