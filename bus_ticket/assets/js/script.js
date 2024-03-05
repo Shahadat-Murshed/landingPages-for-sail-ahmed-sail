@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const couponForm = document.getElementById("couponForm");
     const couponInput = document.getElementById("couponCode");
     const couponMessage = document.getElementById("couponMessage");
-
     const form = document.getElementById("passengerInfo");
     const phoneInput = document.getElementById("phone");
     const submitBtn = document.getElementById("passengerInfoButton");
@@ -86,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             childDiv3.textContent = ticketPrice;
             selectedSeatsList.appendChild(listItem);
         });
+
         noOfSeats.innerHTML = "";
         noOfSeats.innerHTML = selectedSeats.length;
         seatsLeft.innerHTML = "40";
